@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open sans',sans-serif;
+    transition: all 200ms;
+}
+body{
+    background-color: black;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+}
+.todo-form{
+    margin-top: 100px;
+    display: flex;
+}
+.typo{
+    border: none;
+    outline: none;
+}
+.todo-text{
+    width: 400px;
+    background-color: #191919;
+    padding: 13px 0px 10px 7px;
+    font-size: 20px;
+    color: white;
+}
+.todo-text::placeholder{
+    font-size: 20px;
+}
+.btn-submit{
+    background-color: #333333;
+    color: rgb(170, 165, 165);
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0px 10px;
+    border-radius: 1px;
+    font-size: 15px;
+}
+.btn-submit,i{
+    cursor: pointer;
+}
+.btn-submit:hover,i:hover {
+    transform: scale(1.11);
+}
+.list-container{
+    width: 477px;
+    margin-top: 50px;
+}
+li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #2d283e;
+    margin-bottom: 10px;
+    color: white;
+}
+p{
+    flex: 1;
+    padding-left: 7px;
+}
+i{
+    padding: 10px 7px;
+    background-color: #2d283e;
+    color: gray;
+}
+i:hover{
+    background-color: gray;
+    color: black;
+}
+.animate{
+    transition: all 700ms;
+    transform: translateX(200px);
+    opacity: 0;
+} 
+
+@media (max-width: 500px){
+    .list-container{
+        width: 95vw;
+    }
+    .todo-text{
+        width: 78vw;
+    }
+}
