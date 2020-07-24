@@ -25,8 +25,9 @@ function changeToWhite(){
     document.documentElement.style.setProperty('--colorWhite', 'black');
     document.documentElement.style.setProperty('--submitBtnTextColor', 'black');
 
-    document.getElementsByClassName('textLight')[0].classList.remove('textLigh');
     document.getElementsByClassName('textLight')[0].classList.add('textDark');
+    document.getElementsByClassName('textLight')[0].classList.remove('textLight');
+    
 
     const is = document.querySelectorAll('.fa-check, .fa-trash');
     if(is.length > 0) {
@@ -45,8 +46,9 @@ function changeToBlack(){
     document.documentElement.style.setProperty('--submitBtnTextColor', 'rgb(170, 165, 165)');
 
 
-    document.getElementsByClassName('textLight')[0].classList.remove('textDark');
     document.getElementsByClassName('textLight')[0].classList.add('textLight');
+    document.getElementsByClassName('textLight')[0].classList.remove('textDark');
+    
 
     
     const is = document.querySelectorAll('.fa-check, .fa-trash');
