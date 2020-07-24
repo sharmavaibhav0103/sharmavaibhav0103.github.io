@@ -100,7 +100,6 @@ i:hover{
 }
 .fa-adjust::after{
     font-family: cursive;
-    content: 'Light Mode';
     color: var(--colorWhite);
     position: absolute;
     width: 90px;
@@ -117,4 +116,12 @@ i:hover{
     .todo-text{
         width: 78vw;
     }
+}
+
+.textLight::after{
+    content: 'Light Mode';
+}
+
+.textDark::after{
+    content: 'Dark Mode';
 }
