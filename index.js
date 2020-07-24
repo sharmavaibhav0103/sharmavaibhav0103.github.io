@@ -46,8 +46,8 @@ function changeToBlack(){
     document.documentElement.style.setProperty('--submitBtnTextColor', 'rgb(170, 165, 165)');
 
 
-    document.getElementsByClassName('textLight')[0].classList.add('textLight');
-    document.getElementsByClassName('textLight')[0].classList.remove('textDark');
+    document.getElementsByClassName('textDark')[0].classList.add('textLight');
+    document.getElementsByClassName('textDark')[0].classList.remove('textDark');
     
 
     
